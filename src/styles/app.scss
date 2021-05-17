@@ -1,3 +1,10 @@
+@import "./base/typography";
+@import "./components/buttons";
+
 // mixins
-@import "./base/typography.scss";
-@import "./components/buttons.scss";
+@import "./mixins/breakpoints";
+@import "./mixins/animations/basic";
+@import "./mixins/themes/default"; // choose theme
+
+// overwrites
+@import "./overwrites/bootstrap";
