@@ -5,7 +5,9 @@ module.exports = (config) => {
   // allow global vars (https://stackoverflow.com/questions/44345881/using-webpack-to-prepend-variables-for-scss)
   // js sharing (https://til.hashrocket.com/posts/sxbrscjuqu-share-scss-variables-with-javascript)
   config.module.rules.push({
-    test: /src\/.*\.scss$/,
+    // include all files except those located in folder `styles/*`
+    // test: /^((?!styles\/).)*\.scss$/,
+    test: /\.module\.scss$/,
     use: [
       {
         loader: "sass-loader",
