@@ -10,3 +10,17 @@ $black: #000;           // black
 $mono1: #a5a7bd;        // darker monochrome
 $mono2: #f3f5fa;        // lighter monochrome
 $white: #fff;           // white
+
+
+:export {
+    color-primary: $primary;
+    color-secondary: $secondary;
+    color-accent: $accent;
+    color-error: $error;
+    color-confirm: $confirm;
+
+    color-black: $black;
+    color-mono1: $mono1;
+    color-mono2: $mono2;
+    color-white: $white;
+}
