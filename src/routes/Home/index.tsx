@@ -3,7 +3,7 @@ import React from "react";
 import logo from "../../assets/logo.svg";
 import "./styles.scss";
 
-const Home = () => {
+const Home: React.FunctionComponent = () => {
     return (
         <div className="Page Home">
             <h2>Welcome to Public Home</h2>

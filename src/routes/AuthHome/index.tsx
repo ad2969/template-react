@@ -3,7 +3,7 @@ import React from "react";
 import logo from "../../assets/logo.svg";
 import "./styles.scss";
 
-const AuthHome = () => {
+const AuthHome: React.FunctionComponent = () => {
     return (
         <div className="Page AuthHome">
             <h2>Welcome to Authenticated Home</h2>

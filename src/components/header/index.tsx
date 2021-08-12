@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./styles.scss";
 
-const Header = () => {
+const Header: React.FunctionComponent = () => {
     return (
         <ul className="Header flex-center">
             <li><Link to="/">Home</Link></li>
