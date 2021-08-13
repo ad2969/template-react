@@ -7,7 +7,7 @@ import Header from "../components/header";
 import Home from "./Home";
 import NotFound from "./NotFound";
 
-function Routes () {
+const Routes = () => {
     return (
         <BrowserRouter>
             <Header/>
@@ -18,6 +18,6 @@ function Routes () {
             </Switch>
         </BrowserRouter>
     );
-}
+};
 
 export default Routes;
