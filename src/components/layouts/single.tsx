@@ -6,9 +6,9 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
     children: React.ReactNode;
 }
 
-const SinglePageLayout: React.FunctionComponent<Props> = ({ children, ...rest }) => {
+const SinglePageLayout: React.FunctionComponent<Props> = ({ children, className = "", ...rest }) => {
     return (
-        <div className="Page--single" {...rest}>
+        <div className={"Page--single " + className} {...rest}>
             <Header />
             <div className="Content">
                 {children}
