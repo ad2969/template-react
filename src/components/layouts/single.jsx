@@ -2,9 +2,9 @@ import React from "react";
 
 import Header from "../header";
 
-const SinglePageLayout = ({ children, ...rest }) => {
+const SinglePageLayout = ({ children, className = "", ...rest }) => {
     return (
-        <div className="Page--single" {...rest}>
+        <div className={"Page--single " + className} {...rest}>
             <Header />
             <div className="Content">
                 {children}
