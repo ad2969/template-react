@@ -2,9 +2,9 @@ import React from "react";
 
 import Header from "../header";
 
-const ScrollPageLayout = ({ children, className = "", ...rest }) => {
+const MagazinePageLayout = ({ children, className = "", ...rest }) => {
     return (
-        <div className={"Page--scroll " + className} {...rest}>
+        <div className={"Page--magazine " + className} {...rest}>
             <Header />
             <div className="Content">
                 {children}
@@ -13,4 +13,4 @@ const ScrollPageLayout = ({ children, className = "", ...rest }) => {
     );
 };
 
-export default ScrollPageLayout;
+export default MagazinePageLayout;

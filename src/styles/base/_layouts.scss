@@ -10,7 +10,13 @@
     }
 }
 
-.Page--scroll {
+.Page--magazine {
     @extend .Page;
-    overflow-y: scroll;
+    height: auto;
+    overflow: hidden;
+
+    @include for-widescreen-up {
+        max-width: 2500px;
+        margin: 0 auto;
+    }
 }
