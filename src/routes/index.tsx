@@ -1,32 +1,19 @@
 import React from "react";
-import { Route, BrowserRouter, Switch } from "react-router-dom";
-import AuthRoute from "./AuthRoute";
+import { Routes, Route } from "react-router-dom";
 
-import Header from "../components/header";
-
-// import pages
+import DefaultLayout from "components/layout";
+import Forbidden from "./Forbidden";
 import Home from "./Home";
-import AuthHome from "./AuthHome";
-import NotFound from "./NotFound";
 
-interface Props {
-
-}
-
-const Routes: React.FunctionComponent<Props> = () => {
+const App: React.FC = () => {
     return (
-        <BrowserRouter>
-            <Header/>
-            <Switch>
-                {/* AUTHENTICATED ROUTES */}
-                <AuthRoute path="/" component={AuthHome} />
-
-                {/* PUBLIC ROUTES */}
-                <Route exact path="/" component={Home} />
-                <Route path="*" component={NotFound} />
-            </Switch>
-        </BrowserRouter>
+        <Routes>
+            <DefaultLayout>
+                <Route path="/" element={<Home/>} />
+                <Route path="*" element={<Forbidden/>} />
+            </DefaultLayout>
+        </Routes>
     );
 };
 
-export default Routes;
+export default App;
